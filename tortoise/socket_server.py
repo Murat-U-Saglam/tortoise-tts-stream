@@ -16,7 +16,7 @@ def generate_audio_stream(text, tts, voice_samples):
         voice_samples=voice_samples,
         conditioning_latents=conditioning_latents,
         verbose=True,
-        stream_chunk_size=40  # Adjust chunk size as needed
+        stream_chunk_size=80  # Adjust chunk size as needed
     )
     for audio_chunk in stream:
         yield audio_chunk
